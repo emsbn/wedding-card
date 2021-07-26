@@ -11,7 +11,7 @@ const Body = styled.div`
   max-width: 600px;
   width: 100%;
   height: 100vh;
-  perspective: 400px;
+  perspective: 1000px;
   perspective-origin: center center;
   overflow: hidden;
 `;
