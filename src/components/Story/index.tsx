@@ -1,58 +1,53 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Frame, House } from './styles';
+import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
+import { Box, Frame3D, Frame, PhotoContainer, Photo, Text } from './styles';
 
 const Story = () => {
-  const [zValue, setZValue] = useState(-500);
+  const [zValue, setZValue] = useState(0);
+
   useEffect(() => {
     const maxScrollValue = document.body.offsetHeight - window.innerHeight;
 
     function scrollHandler(this: any) {
-      setZValue((this.pageYOffset / maxScrollValue) * 2000 - 500);
+      setZValue((this.pageYOffset / maxScrollValue) * 1200);
       console.log(this.pageYOffset, maxScrollValue, zValue);
+
+      // if (this.pageYOffset > 300) {
+      // }
     }
 
     window.addEventListener('scroll', scrollHandler);
-  }, []);
+  }, [zValue]);
 
   return (
     <Box>
-      <Frame className="frame" style={{ transform: `translateZ(${zValue}vw)` }}>
-        <House className="">
-          <div className="photo">
-            <h2 className="house__contents-title">Hello!</h2>
-          </div>
-        </House>
-        <House>
-          <div className="photo">
-            <h2 className="house__contents-title">Bonjour!</h2>
-          </div>
-        </House>
-        <House>
-          <div className="photo">
-            <h2 className="house__contents-title">약!</h2>
-          </div>
-        </House>
-        <House>
-          <div className="photo">
-            <h2 className="house__contents-title">약!</h2>
-          </div>
-        </House>
-        <House className="">
-          <div className="photo">
-            <h2 className="house__contents-title">Hello!</h2>
-          </div>
-        </House>
-        <House>
-          <div className="photo">
-            <h2 className="house__contents-title">Bonjour!</h2>
-          </div>
-        </House>
-        <House>
-          <div className="photo">
-            <h2 className="house__contents-title">약!</h2>
-          </div>
-        </House>
-      </Frame>
+      <Frame3D style={{ transform: `translateZ(${zValue}vw)` }}>
+        <Frame>
+          <PhotoContainer>
+            <Photo src="/images/story/test.jpg" alt="test" />
+            <Text>Hello!</Text>
+          </PhotoContainer>
+        </Frame>
+        <Frame>
+          <PhotoContainer>
+            <Text>Bonjour!</Text>
+          </PhotoContainer>
+        </Frame>
+        <Frame>
+          <PhotoContainer>
+            <Text>약!</Text>
+          </PhotoContainer>
+        </Frame>
+        <Frame>
+          <PhotoContainer>
+            <Text>약!</Text>
+          </PhotoContainer>
+        </Frame>
+        <Frame>
+          <PhotoContainer>
+            <Text>Hello!</Text>
+          </PhotoContainer>
+        </Frame>
+      </Frame3D>
     </Box>
   );
 };
