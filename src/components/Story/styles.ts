@@ -29,22 +29,26 @@ export const Frame = styled.div`
   height: 100vh;
   //transform-style: preserve-3d;
   background: blueviolet;
+  transition: opacity 0.35s;
 
   &:nth-of-type(1) {
     transform: translateZ(0vw);
   }
   &:nth-of-type(2) {
-    transform: translateZ(-250vw);
+    transform: translateZ(-300vw);
   }
   &:nth-of-type(3) {
-    transform: translateZ(-500vw);
+    transform: translateZ(-600vw);
   }
   &:nth-of-type(4) {
-    transform: translateZ(-750vw);
+    transform: translateZ(-900vw);
   }
   &:nth-of-type(5) {
-    transform: translateZ(-1000vw);
+    transform: translateZ(-1200vw);
   }
+  //&:nth-of-type(6) {
+  //  transform: translateZ(-2500vw);
+  //}
 `;
 
 export const PhotoContainer = styled.div`
@@ -59,9 +63,12 @@ export const PhotoContainer = styled.div`
 `;
 
 export const Photo = styled.img`
-  width: 80%;
+  height: 55%;
+  max-width: 100%;
+  object-fit: cover;
 `;
 
-export const Text = styled.h2`
-  margin: 0;
+export const Text = styled.p`
+  margin: 1rem 0;
+  font-size: 1.75rem;
 `;

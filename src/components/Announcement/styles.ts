@@ -3,8 +3,11 @@ import styled from '@emotion/styled';
 const AnnouncementMain = styled.div`
   display: block;
   position: absolute;
-  top: 4200px;
+  bottom: 2rem;
   z-index: -2;
+  height: calc(100vh - 5rem);
+  width: 100%;
+  background: pink;
 `;
 
 export { AnnouncementMain };

@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 const Body = styled.div`
-  //background: deepskyblue;
-  //height: 100%;
+  height: 5000px;
+  position: relative;
 `;
 
 export { Body };
