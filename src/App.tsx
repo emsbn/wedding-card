@@ -19,12 +19,12 @@ function App() {
 
   useEffect(() => {
     if (scrollbarRef?.current)
-      setMaxScroll(scrollbarRef.current.getScrollHeight() - scrollbarRef?.current.getClientHeight());
+      setMaxScroll(scrollbarRef.current.getScrollHeight() - scrollbarRef?.current.getClientHeight() * 2);
   }, [scrollbarRef, maxScroll]);
 
   const onScroll = useCallback(
     values => {
-      setZValue((values.scrollTop / maxScroll) * 1500);
+      setZValue((values.scrollTop / maxScroll) * 1000);
     },
     [maxScroll, scrollbarRef, zValue],
   );

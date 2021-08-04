@@ -30,20 +30,17 @@ export const Frame = styled.div`
     transform: translateZ(0vw);
   }
   &:nth-of-type(2) {
-    transform: translateZ(-300vw);
+    transform: translateZ(-250vw);
   }
   &:nth-of-type(3) {
-    transform: translateZ(-600vw);
+    transform: translateZ(-500vw);
   }
   &:nth-of-type(4) {
-    transform: translateZ(-900vw);
+    transform: translateZ(-750vw);
   }
   &:nth-of-type(5) {
-    transform: translateZ(-1200vw);
+    transform: translateZ(-1000vw);
   }
-  //&:nth-of-type(6) {
-  //  transform: translateZ(-2500vw);
-  //}
 `;
 
 export const PhotoContainer = styled.div`

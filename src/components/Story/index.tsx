@@ -16,22 +16,22 @@ const Story = ({ zValue }) => {
     } else {
       if (frameRefs[0].current) frameRefs[0].current.style.opacity = '1';
     }
-    if (zValue > 325) {
+    if (zValue > 275) {
       if (frameRefs[1].current) frameRefs[1].current.style.opacity = '0';
     } else {
       if (frameRefs[1].current) frameRefs[1].current.style.opacity = '1';
     }
-    if (zValue > 625) {
+    if (zValue > 525) {
       if (frameRefs[2].current) frameRefs[2].current.style.opacity = '0';
     } else {
       if (frameRefs[2].current) frameRefs[2].current.style.opacity = '1';
     }
-    if (zValue > 925) {
+    if (zValue > 775) {
       if (frameRefs[3].current) frameRefs[3].current.style.opacity = '0';
     } else {
       if (frameRefs[3].current) frameRefs[3].current.style.opacity = '1';
     }
-    if (zValue > 1225) {
+    if (zValue > 1025) {
       if (frameRefs[4].current) frameRefs[4].current.style.opacity = '0';
     } else {
       if (frameRefs[4].current) frameRefs[4].current.style.opacity = '1';
