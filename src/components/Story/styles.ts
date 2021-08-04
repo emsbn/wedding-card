@@ -1,17 +1,14 @@
 import styled from '@emotion/styled';
 
 export const Box = styled.div`
-  //background: pink;
-
-  position: fixed;
+  position: sticky;
+  top: 0;
   max-width: 600px;
   width: 100%;
   height: 100vh;
   perspective: 1000px;
   perspective-origin: center center;
   overflow: hidden;
-  //transform-style: preserve-3d;
-  //transform: translateZ(0vw);
 `;
 
 export const Frame3D = styled.div`
@@ -24,10 +21,8 @@ export const Frame3D = styled.div`
 
 export const Frame = styled.div`
   position: absolute;
-  //max-width: 600px;
   width: 100%;
   height: 100vh;
-  //transform-style: preserve-3d;
   background: blueviolet;
   transition: opacity 0.35s;
 

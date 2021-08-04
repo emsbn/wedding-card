@@ -1,52 +1,46 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+
 import { Box, Frame3D, Frame, PhotoContainer, Photo, Text } from './styles';
 
-const Story = () => {
-  const [zValue, setZValue] = useState(0);
+const Story = ({ zValue }) => {
+  const frame3DRef = useRef<HTMLDivElement>(null);
   const frameRefs = Array(6)
     .fill(undefined)
     .map(() => useRef<HTMLDivElement>(null));
 
   useEffect(() => {
-    const maxScrollValue = document.body.offsetHeight - window.innerHeight;
+    if (frame3DRef.current) frame3DRef.current.style.transform = `translateZ(${zValue}vw)`;
 
-    function scrollHandler(this: any) {
-      setZValue((this.pageYOffset / maxScrollValue) * 1500);
-      console.log(this.pageYOffset, maxScrollValue, zValue);
-
-      if (this.pageYOffset > 50) {
-        if (frameRefs[0].current) frameRefs[0].current.style.opacity = '0';
-      } else {
-        if (frameRefs[0].current) frameRefs[0].current.style.opacity = '1';
-      }
-      if (this.pageYOffset > 900) {
-        if (frameRefs[1].current) frameRefs[1].current.style.opacity = '0';
-      } else {
-        if (frameRefs[1].current) frameRefs[1].current.style.opacity = '1';
-      }
-      if (this.pageYOffset > 1750) {
-        if (frameRefs[2].current) frameRefs[2].current.style.opacity = '0';
-      } else {
-        if (frameRefs[2].current) frameRefs[2].current.style.opacity = '1';
-      }
-      if (this.pageYOffset > 2600) {
-        if (frameRefs[3].current) frameRefs[3].current.style.opacity = '0';
-      } else {
-        if (frameRefs[3].current) frameRefs[3].current.style.opacity = '1';
-      }
-      if (this.pageYOffset > 3450) {
-        if (frameRefs[4].current) frameRefs[4].current.style.opacity = '0';
-      } else {
-        if (frameRefs[4].current) frameRefs[4].current.style.opacity = '1';
-      }
+    if (zValue > 25) {
+      if (frameRefs[0].current) frameRefs[0].current.style.opacity = '0';
+    } else {
+      if (frameRefs[0].current) frameRefs[0].current.style.opacity = '1';
     }
-
-    window.addEventListener('scroll', scrollHandler);
-  }, [zValue]);
+    if (zValue > 325) {
+      if (frameRefs[1].current) frameRefs[1].current.style.opacity = '0';
+    } else {
+      if (frameRefs[1].current) frameRefs[1].current.style.opacity = '1';
+    }
+    if (zValue > 625) {
+      if (frameRefs[2].current) frameRefs[2].current.style.opacity = '0';
+    } else {
+      if (frameRefs[2].current) frameRefs[2].current.style.opacity = '1';
+    }
+    if (zValue > 925) {
+      if (frameRefs[3].current) frameRefs[3].current.style.opacity = '0';
+    } else {
+      if (frameRefs[3].current) frameRefs[3].current.style.opacity = '1';
+    }
+    if (zValue > 1225) {
+      if (frameRefs[4].current) frameRefs[4].current.style.opacity = '0';
+    } else {
+      if (frameRefs[4].current) frameRefs[4].current.style.opacity = '1';
+    }
+  }, [zValue, frame3DRef, frameRefs]);
 
   return (
     <Box>
-      <Frame3D style={{ transform: `translateZ(${zValue}vw)` }}>
+      <Frame3D ref={frame3DRef} className="Frame3D">
         <Frame ref={frameRefs[0]}>
           <PhotoContainer>
             <Photo src="/images/story/test.jpg" alt="test" />
