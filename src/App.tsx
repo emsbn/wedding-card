@@ -13,7 +13,7 @@ function App() {
   const scrollbarRef = useRef<Scrollbars>(null);
 
   useEffect(() => {
-    ReactGA.initialize('G-H8KCK9J7S2');
+    ReactGA.initialize('UA-151723707-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
