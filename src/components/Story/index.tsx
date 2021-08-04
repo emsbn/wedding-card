@@ -43,7 +43,7 @@ const Story = ({ zValue }) => {
       <Frame3D ref={frame3DRef} className="Frame3D">
         <Frame ref={frameRefs[0]}>
           <PhotoContainer>
-            <Photo src="images/story/test.jpg" alt="test" />
+            <Photo src="public/images/story/test.jpg" alt="test" />
             <Text>9월의 어느 아름다운 날</Text>
           </PhotoContainer>
         </Frame>
