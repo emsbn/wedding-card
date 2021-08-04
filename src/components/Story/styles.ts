@@ -23,7 +23,7 @@ export const Frame = styled.div`
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: blueviolet;
+  //background: blueviolet;
   transition: opacity 0.35s;
 
   &:nth-of-type(1) {
