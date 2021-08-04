@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import ReactGA from 'react-ga';
 
 import './App.css';
 import HeaderContainer from './layouts/Header';
@@ -10,6 +11,11 @@ function App() {
   const [zValue, setZValue] = useState<number>(0);
   const [maxScroll, setMaxScroll] = useState<number>(0);
   const scrollbarRef = useRef<Scrollbars>(null);
+
+  useEffect(() => {
+    ReactGA.initialize('G-FLPCLT8DCN');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   useEffect(() => {
     if (scrollbarRef?.current)
