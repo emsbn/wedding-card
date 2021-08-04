@@ -2,7 +2,7 @@
   "name": "wedding-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://emsbn.github.io/wedding-card/",
+  "homepage": "https://emsbn.github.io/wedding-card",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
