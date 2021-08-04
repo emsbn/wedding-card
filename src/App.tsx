@@ -13,7 +13,11 @@ function App() {
   const scrollbarRef = useRef<Scrollbars>(null);
 
   useEffect(() => {
-    ReactGA.initialize('G-FLPCLT8DCN');
+    ReactGA.initialize([
+      { trackingId: 'G-FLPCLT8DCN' },
+      { trackingId: 'G-QEDVNBS5PN' },
+      { trackingId: 'G-HQ2PK7JTTB' },
+    ]);
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
