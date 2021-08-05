@@ -7,7 +7,7 @@ export const Box = styled.div`
   width: 100%;
   height: 100vh;
   perspective: 1000px;
-  perspective-origin: center center;
+  perspective-origin: center 30vh;
   overflow: hidden;
 `;
 

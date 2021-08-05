@@ -33,6 +33,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@material-ui/core": "^4.12.3",
+    "@ref/react-kakao-maps": "^0.2.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -44,6 +45,7 @@
     "react-custom-scrollbars-2": "^4.4.0",
     "react-dom": "^17.0.2",
     "react-ga": "^3.3.0",
+    "react-kakao-link": "^0.1.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
@@ -55,6 +57,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "gh-pages": "^3.2.3",
+    "kakao.maps.d.ts": "^0.1.1",
     "prettier": "^2.3.2"
   }
 }

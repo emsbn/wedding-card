@@ -9,7 +9,7 @@ export const Header = styled.header`
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   backdrop-filter: blur(3px);
 `;
@@ -18,4 +18,6 @@ export const Button = styled(BT)`
   border-radius: 3rem !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
+  font-family: 'Gowun Dodum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
 `;
