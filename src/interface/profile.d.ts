@@ -7,4 +7,5 @@ export interface iProfile {
   bank: string;
   account: string;
   account2: string;
+  account3?: string;
 }

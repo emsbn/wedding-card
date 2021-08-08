@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Box, Accordion, AccordionDetails } from '@material-ui/core';
+import { Box, AccordionDetails } from '@material-ui/core';
 
 import {
   AnnouncementMain,
@@ -8,6 +8,7 @@ import {
   TextRow,
   KaKaoButton,
   AccountButton,
+  AccountAccordion,
   AccountAccordionSummary,
 } from './styles';
 import MapComponent from './Map';
@@ -15,6 +16,7 @@ import List from './Photo/List';
 import Calendar from './Calendar';
 import Contact from './Contact';
 import { subin, hyeonsu, bongsug, chaeeun, sihong, dagyeom } from '../../data/profile';
+import Account from './Account';
 
 const Announcement = () => {
   const [accountOpen, setAccountOpen] = useState<boolean>(false);
@@ -112,27 +114,31 @@ const Announcement = () => {
       </Box>
 
       <Box pb={4}>
-        <Accordion expanded={accountOpen}>
+        <AccountAccordion expanded={accountOpen}>
           <AccountAccordionSummary>
             <AccountButton onClick={onClickAccountButton}>계좌번호 확인하기</AccountButton>
           </AccountAccordionSummary>
           <AccordionDetails>
             <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
               <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                <Contact img={subin.img} name="신랑 임수빈" click="subin" />
-                <Contact mx={1} img={hyeonsu.img} name="아버지 임현수" click="hyeonsu" />
-                <Contact mx={1} img={bongsug.img} name="어머니 김봉숙" click="bongsug" />
+                <Account img={subin.img} name="신랑 임수빈" click="subin" />
+              </Box>
+              <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+                <Account mx={1} img={hyeonsu.img} name="아버지 임현수" click="hyeonsu" />
+                <Account mx={1} img={bongsug.img} name="어머니 김봉숙" click="bongsug" />
               </Box>
             </Box>
             <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
               <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                <Contact img={chaeeun.img} name="신부 김채은" click="chaeeun" />
-                <Contact mx={1} img={sihong.img} name="아버지 김시홍" click="sihong" />
-                <Contact mx={1} img={dagyeom.img} name="어머니 이다겸" click="dagyeom" />
+                <Account img={chaeeun.img} name="신부 김채은" click="chaeeun" />
+              </Box>
+              <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+                <Account mx={1} img={sihong.img} name="아버지 김시홍" click="sihong" />
+                <Account mx={1} img={dagyeom.img} name="어머니 이다겸" click="dagyeom" />
               </Box>
             </Box>
           </AccordionDetails>
-        </Accordion>
+        </AccountAccordion>
       </Box>
     </AnnouncementMain>
   );

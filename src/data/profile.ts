@@ -19,6 +19,7 @@ export const hyeonsu: iProfile = {
   bank: '**은행',
   account: '000-000-000000',
   account2: '000000000000',
+  account3: '임덕순',
 };
 export const bongsug: iProfile = {
   name: '김봉숙',
