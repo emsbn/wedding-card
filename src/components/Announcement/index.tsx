@@ -1,16 +1,27 @@
-import { useCallback, useEffect } from 'react';
-import { Box } from '@material-ui/core';
+import { useCallback, useEffect, useState } from 'react';
+import { Box, Accordion, AccordionDetails } from '@material-ui/core';
 
-import { AnnouncementMain, Name, SubTitle, TextRow, KaKaoButton } from './styles';
+import {
+  AnnouncementMain,
+  Name,
+  SubTitle,
+  TextRow,
+  KaKaoButton,
+  AccountButton,
+  AccountAccordionSummary,
+} from './styles';
 import MapComponent from './Map';
 import List from './Photo/List';
 import Calendar from './Calendar';
 import Contact from './Contact';
+import { subin, hyeonsu, bongsug, chaeeun, sihong, dagyeom } from '../../data/profile';
 
 const Announcement = () => {
+  const [accountOpen, setAccountOpen] = useState<boolean>(false);
+
   useEffect(() => {
     window.Kakao.init('4b7c1551aaf583d0e7ae892ac46c0053');
-  }, []);
+  }, [window.Kakao]);
 
   const kakaoShare = useCallback(() => {
     window.Kakao.Link.sendCustom({
@@ -20,6 +31,10 @@ const Announcement = () => {
         description: '설명 영역입니다.',
       },
     });
+  }, []);
+
+  const onClickAccountButton = useCallback(() => {
+    setAccountOpen(prev => !prev);
   }, []);
 
   return (
@@ -65,28 +80,27 @@ const Announcement = () => {
       <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
         <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-            <Contact img="./images/profile/subin.png" name="신랑 임수빈" />
+            <Contact img={subin.img} name="신랑 임수빈" click="subin" />
           </Box>
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-            <Contact mx={1} img="./images/profile/hyeonsu.png" name="아버지 임현수" />
-            <Contact mx={1} img="./images/profile/bongsug.png" name="어머니 김봉숙" />
+            <Contact mx={1} img={hyeonsu.img} name="아버지 임현수" click="hyeonsu" />
+            <Contact mx={1} img={bongsug.img} name="어머니 김봉숙" click="bongsug" />
           </Box>
         </Box>
         <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-            <Contact img="./images/profile/chaeeun.png" name="신부 김채은" />
+            <Contact img={chaeeun.img} name="신부 김채은" click="chaeeun" />
           </Box>
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-            <Contact mx={1} img="./images/profile/sihong.png" name="아버지 김시홍" />
-            <Contact mx={1} img="./images/profile/dagyeom.png" name="어머니 이다겸" />
+            <Contact mx={1} img={sihong.img} name="아버지 김시홍" click="sihong" />
+            <Contact mx={1} img={dagyeom.img} name="어머니 이다겸" click="dagyeom" />
           </Box>
         </Box>
       </Box>
-      {/*<KakaoLinkDefault className="template" template={template} jsKey={'1ee5cc9e2e4525c244069216d2522870'}>*/}
+
       <KaKaoButton centerRipple onClick={kakaoShare}>
         카카오톡 공유하기
       </KaKaoButton>
-      {/*</KakaoLinkDefault>*/}
 
       <SubTitle>마음 전하실 곳</SubTitle>
       <Box my={2}>
@@ -96,7 +110,30 @@ const Announcement = () => {
         <TextRow>어려운 시기에 축복해 주셔서</TextRow>
         <TextRow>감사합니다.</TextRow>
       </Box>
-      <div>계좌번호 확인하기</div>
+
+      <Box pb={4}>
+        <Accordion expanded={accountOpen}>
+          <AccountAccordionSummary>
+            <AccountButton onClick={onClickAccountButton}>계좌번호 확인하기</AccountButton>
+          </AccountAccordionSummary>
+          <AccordionDetails>
+            <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
+              <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+                <Contact img={subin.img} name="신랑 임수빈" click="subin" />
+                <Contact mx={1} img={hyeonsu.img} name="아버지 임현수" click="hyeonsu" />
+                <Contact mx={1} img={bongsug.img} name="어머니 김봉숙" click="bongsug" />
+              </Box>
+            </Box>
+            <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
+              <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+                <Contact img={chaeeun.img} name="신부 김채은" click="chaeeun" />
+                <Contact mx={1} img={sihong.img} name="아버지 김시홍" click="sihong" />
+                <Contact mx={1} img={dagyeom.img} name="어머니 이다겸" click="dagyeom" />
+              </Box>
+            </Box>
+          </AccordionDetails>
+        </Accordion>
+      </Box>
     </AnnouncementMain>
   );
 };

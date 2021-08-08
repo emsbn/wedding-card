@@ -1,4 +1,4 @@
-export interface photo {
+export interface iPhoto {
   path: string;
   title: string;
   cols?: number;

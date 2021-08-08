@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Typography, Button } from '@material-ui/core';
+import { Typography, Button, AccordionSummary } from '@material-ui/core';
 
 export const AnnouncementMain = styled.div`
   display: block;
@@ -40,4 +40,22 @@ export const KaKaoButton = styled(Button)`
   font-family: 'BMHANNAAir', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 600 !important;
+`;
+
+export const AccountButton = styled(Button)`
+  background: mediumpurple !important;
+  color: #fff !important;
+  border-radius: 0.25rem !important;
+  margin-bottom: 2rem !important;
+  font-family: 'BMHANNAAir', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-weight: 600 !important;
+`;
+
+export const AccountAccordionSummary = styled(AccordionSummary)`
+  .MuiAccordionSummary-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 `;

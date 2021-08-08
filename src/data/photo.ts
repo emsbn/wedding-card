@@ -1,6 +1,6 @@
-import { photo } from '../interface/photo';
+import { iPhoto } from '../interface/photo';
 
-export const photoData: photo[] = [
+export const photoData: iPhoto[] = [
   {
     path: './images/photo/wedding-bg-1.jpg',
     title: 'bride and groom 1',
