@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Typography } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 
 export const AnnouncementMain = styled.div`
   display: block;
@@ -29,5 +29,15 @@ export const Name = styled(Typography)`
   font-family: 'BMHANNAAir', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
+  font-weight: 600 !important;
+`;
+
+export const KaKaoButton = styled(Button)`
+  background: #fee500 !important;
+  color: #000 !important;
+  border-radius: 0.25rem !important;
+  margin-bottom: 2rem !important;
+  font-family: 'BMHANNAAir', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 600 !important;
 `;
