@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Typography } from '@material-ui/core';
 
 export const Box = styled.div`
   position: sticky;
@@ -51,7 +52,6 @@ export const PhotoContainer = styled.div`
   width: 100%;
   height: 100%;
   color: #333;
-  font-size: 5em;
 `;
 
 export const Photo = styled.img`
@@ -60,7 +60,12 @@ export const Photo = styled.img`
   object-fit: cover;
 `;
 
-export const Text = styled.p`
-  margin: 1rem 0;
-  font-size: 1.75rem;
+export const Text = styled(Typography)`
+  margin: 1rem 0 !important;
+  font-size: 1.25rem !important;
+  font-family: 'Gowun Dodum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  line-height: 1.625rem !important;
+  //display: flex;
+  //flex-wrap: wrap;
 `;

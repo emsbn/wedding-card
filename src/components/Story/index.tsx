@@ -44,31 +44,49 @@ const Story = ({ zValue }) => {
         <Frame ref={frameRefs[0]}>
           <PhotoContainer>
             <Photo src="./images/story/story-1.jpg" alt="story-1" />
-            <Text>9월의 어느 아름다운 날</Text>
+            <Text align="left">
+              9월의
+              <br />
+              어느 아름다운 날
+            </Text>
           </PhotoContainer>
         </Frame>
         <Frame ref={frameRefs[1]}>
           <PhotoContainer>
             <Photo src="./images/story/story-2.jpg" alt="story-2" />
-            <Text>살아온 환경, 좋아하는 것도 다른 저희가</Text>
+            <Text align="left">
+              살아온 환경,
+              <br />
+              좋아하는 것도 다른 저희가
+            </Text>
           </PhotoContainer>
         </Frame>
         <Frame ref={frameRefs[2]}>
           <PhotoContainer>
             <Photo src="./images/story/story-3.jpg" alt="story-3" />
-            <Text>이제 서로를 닮아 가려 합니다.</Text>
+            <Text align="center">이제 서로를 닮아 가려 합니다.</Text>
           </PhotoContainer>
         </Frame>
         <Frame ref={frameRefs[3]}>
           <PhotoContainer>
             <Photo src="./images/story/story-4.jpg" alt="story-4" />
-            <Text>혼자가 아닌 우리로서 행복하게 잘 살겠습니다.</Text>
+            <Text align="left">
+              혼자가 아닌 우리로서
+              <br />
+              행복하게 살겠습니다.
+            </Text>
           </PhotoContainer>
         </Frame>
         <Frame ref={frameRefs[4]}>
           <PhotoContainer>
             <Photo src="./images/story/story-5.jpg" alt="story-5" />
-            <Text>9월 소중한 약속의 날을 축복해주십시오.</Text>
+            <Text align="left">
+              9월
+              <br />
+              소중한 약속의 날을
+              <br />
+              축복해주십시오.
+            </Text>
           </PhotoContainer>
         </Frame>
       </Frame3D>
