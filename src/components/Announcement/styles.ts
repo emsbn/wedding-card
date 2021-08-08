@@ -7,7 +7,7 @@ export const AnnouncementMain = styled.div`
   bottom: 2rem;
   height: calc(100vh - 5rem);
   width: 100%;
-  background: pink;
+  //background: pink;
 `;
 
 export const SubTitle = styled(Typography)`
