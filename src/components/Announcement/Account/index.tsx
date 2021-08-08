@@ -76,7 +76,7 @@ const Account = ({
               </ModalProfile>
               <ModalContact>
                 <span>{who['bank']}</span>
-                <span>{`${who['account']} (${who['account3'] ? who['account3'] : who['name']})`}</span>
+                <span>{`${who['account']}(${who['account3'] ? who['account3'] : who['name']})`}</span>
                 <ModalContactLink>
                   <span onClick={accountCopy}>복사하기</span>
                   <AccountTextarea ref={accountTextareaRef} defaultValue={who['account2']} readOnly />

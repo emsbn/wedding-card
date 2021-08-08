@@ -56,7 +56,7 @@ export const ModalProfileName = styled.p`
 `;
 
 export const ModalContact = styled(Box)`
-  width: 90%;
+  width: 96%;
   background: #ffffff;
   display: flex;
   flex-direction: row;
