@@ -17,8 +17,7 @@ import Calendar from './Calendar';
 import Contact from './Contact';
 import { subin, hyeonsu, bongsug, chaeeun, sihong, dagyeom } from '../../data/profile';
 import Account from './Account';
-
-const Announcement = () => {
+const Announcement = ({ announceRef }) => {
   const [accountOpen, setAccountOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const Announcement = () => {
   }, []);
 
   return (
-    <AnnouncementMain>
+    <AnnouncementMain ref={announceRef}>
       <SubTitle>초대합니다</SubTitle>
       <Box mt={1} mb={2}>
         <TextRow>코로나19 장기화로 긴 고민 끝에</TextRow>
@@ -113,7 +112,7 @@ const Announcement = () => {
         <TextRow>감사합니다.</TextRow>
       </Box>
 
-      <Box pb={4}>
+      <Box my={2}>
         <AccountAccordion expanded={accountOpen}>
           <AccountAccordionSummary>
             <AccountButton onClick={onClickAccountButton}>계좌번호 확인하기</AccountButton>

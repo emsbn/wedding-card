@@ -5,7 +5,7 @@ export const AnnouncementMain = styled.div`
   display: block;
   position: absolute;
   bottom: 2rem;
-  height: calc(100vh - 5rem);
+  //height: calc(100vh - 5rem);
   width: 100%;
   //background: pink;
 `;

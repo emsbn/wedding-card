@@ -11,6 +11,7 @@ function App() {
   const [zValue, setZValue] = useState<number>(0);
   const [maxScroll, setMaxScroll] = useState<number>(0);
   const scrollbarRef = useRef<Scrollbars>(null);
+  const announceRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     ReactGA.initialize('UA-151723707-1');
@@ -18,9 +19,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (scrollbarRef?.current)
-      setMaxScroll(scrollbarRef.current.getScrollHeight() - scrollbarRef?.current.getClientHeight() * 2);
-  }, [scrollbarRef, maxScroll]);
+    if (scrollbarRef?.current && announceRef?.current)
+      setMaxScroll(
+        scrollbarRef.current.getScrollHeight() -
+          scrollbarRef?.current.getClientHeight() -
+          announceRef.current.offsetHeight,
+      );
+  }, [scrollbarRef, maxScroll, announceRef]);
 
   const onScroll = useCallback(
     values => {
@@ -33,7 +38,7 @@ function App() {
     <Scrollbars ref={scrollbarRef} onScrollFrame={onScroll} style={{ height: '100vh' }}>
       <div className="App">
         <HeaderContainer />
-        <BodyContainer zValue={zValue} />
+        <BodyContainer zValue={zValue} announceRef={announceRef} />
         <FooterContainer />
       </div>
     </Scrollbars>

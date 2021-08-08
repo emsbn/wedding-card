@@ -4,11 +4,11 @@ import { Body } from './styles';
 import Story from '../../components/Story';
 import Announcement from '../../components/Announcement';
 
-const BodyContainer = ({ zValue }) => {
+const BodyContainer = ({ zValue, announceRef }) => {
   return (
     <Body>
       <Story zValue={zValue} />
-      <Announcement />
+      <Announcement announceRef={announceRef} />
     </Body>
   );
 };
