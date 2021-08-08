@@ -10,7 +10,6 @@ import Contact from './Contact';
 const Announcement = () => {
   useEffect(() => {
     window.Kakao.init('4b7c1551aaf583d0e7ae892ac46c0053');
-    // console.log(window.Kakao.init);
   }, []);
 
   const kakaoShare = useCallback(() => {
@@ -52,7 +51,9 @@ const Announcement = () => {
       </Box>
 
       <SubTitle>오시는 길</SubTitle>
-      <MapComponent />
+      <a className="App-link" href="http://kko.to/96p6rKDfp" target="_blank" rel="noopener noreferrer">
+        <MapComponent />
+      </a>
       <Box mt={2} mb={3}>
         <TextRow>2021년 9월 12일 일요일 낮 12시</TextRow>
         <TextRow color="textPrimary">근화원</TextRow>
