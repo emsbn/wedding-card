@@ -12,7 +12,6 @@ const List = () => {
 
   const onClickImage = useCallback(
     idx => {
-      console.log({ slickRef });
       setOpen(true);
       setTimeout(() => {
         if (slickRef.current) slickRef.current.slickGoTo(idx, true);

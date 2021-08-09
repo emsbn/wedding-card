@@ -30,7 +30,6 @@ const Contact = ({
   const [who, setWho] = useState<string>('');
 
   const onClickProfile = useCallback(name => {
-    console.log({ name });
     setWho(allProfile[name]);
     setOpen(true);
   }, []);
