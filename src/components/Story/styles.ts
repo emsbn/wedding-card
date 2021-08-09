@@ -31,15 +31,21 @@ export const Frame = styled.div`
     transform: translateZ(0vw);
   }
   &:nth-of-type(2) {
-    transform: translateZ(-250vw);
+    transform: translateZ(-200vw);
   }
   &:nth-of-type(3) {
-    transform: translateZ(-500vw);
+    transform: translate(50vw, -25vw, -375vw);
   }
   &:nth-of-type(4) {
-    transform: translateZ(-750vw);
+    transform: translate(-50vw, 25vw, -425vw);
   }
   &:nth-of-type(5) {
+    transform: translateZ(-600vw);
+  }
+  &:nth-of-type(6) {
+    transform: translateZ(-800vw);
+  }
+  &:nth-of-type(7) {
     transform: translateZ(-1000vw);
   }
 `;
