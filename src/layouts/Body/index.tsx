@@ -7,7 +7,7 @@ import Announcement from '../../components/Announcement';
 const BodyContainer = ({ zValue, scrollbarRef, announceRef, contactRef }) => {
   return (
     <Body>
-      <Story zValue={zValue} />
+      <Story zValue={zValue} announceRef={announceRef} />
       <Announcement scrollbarRef={scrollbarRef} announceRef={announceRef} contactRef={contactRef} />
     </Body>
   );

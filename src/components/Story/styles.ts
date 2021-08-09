@@ -28,25 +28,22 @@ export const Frame = styled.div`
   transition: opacity 0.35s;
 
   &:nth-of-type(1) {
-    transform: translateZ(0vw);
+    transform: translateZ(-50vh);
   }
   &:nth-of-type(2) {
-    transform: translateZ(-200vw);
+    transform: translateZ(-480vh);
   }
   &:nth-of-type(3) {
-    transform: translate(50vw, -25vw, -375vw);
+    transform: translateZ(-520vh);
   }
   &:nth-of-type(4) {
-    transform: translate(-50vw, 25vw, -425vw);
+    transform: translateZ(-1000vh);
   }
   &:nth-of-type(5) {
-    transform: translateZ(-600vw);
+    transform: translateZ(-1500vh);
   }
   &:nth-of-type(6) {
-    transform: translateZ(-800vw);
-  }
-  &:nth-of-type(7) {
-    transform: translateZ(-1000vw);
+    transform: translateZ(-1990vh);
   }
 `;
 
@@ -66,12 +63,24 @@ export const Photo = styled.img`
   object-fit: cover;
 `;
 
+export const PhotoSub1 = styled.img`
+  height: 40%;
+  max-width: 60%;
+  object-fit: scale-down;
+  transform: translate3d(15vh, 0vh, 0);
+`;
+
+export const PhotoSub2 = styled.img`
+  height: 40%;
+  max-width: 80%;
+  object-fit: scale-down;
+  transform: translate3d(-10vh, -20vh, 0);
+`;
+
 export const Text = styled(Typography)`
-  margin: 1rem 0 !important;
+  margin: 0.5rem 0 !important;
   font-size: 1.25rem !important;
   font-family: 'Gowun Dodum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-  line-height: 1.625rem !important;
-  //display: flex;
-  //flex-wrap: wrap;
+  line-height: 1.75rem !important;
 `;

@@ -31,7 +31,7 @@ function App() {
 
   const onScroll = useCallback(
     values => {
-      setZValue((values.scrollTop / maxScroll) * 1000);
+      setZValue((values.scrollTop / maxScroll) * 2000);
     },
     [maxScroll, scrollbarRef, zValue],
   );

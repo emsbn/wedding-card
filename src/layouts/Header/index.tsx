@@ -1,8 +1,10 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 import { Header, Button } from './styles';
 
 const HeaderContainer = ({ scrollbarRef, announceRef, contactRef }) => {
+  const [contactTop, setContactTop] = useState<number>(9266);
+
   const onClickStory = useCallback(() => {
     scrollbarRef.current.view.scroll({ top: 0, behavior: 'smooth' });
   }, []);
@@ -17,14 +19,20 @@ const HeaderContainer = ({ scrollbarRef, announceRef, contactRef }) => {
     });
   }, []);
 
-  const onClickContact = useCallback(() => {
+  useEffect(() => {
+    const top = contactRef.current.getBoundingClientRect().top;
+    if (top > 9000) setContactTop(top);
+  }, [contactRef]);
+
+  const onClickContact = useCallback(async () => {
+    const top = await contactRef.current.getBoundingClientRect().top;
+    if (top > 9000) setContactTop(top);
+
     scrollbarRef.current.view.scroll({
-      top:
-        contactRef.current.getBoundingClientRect().top -
-        parseFloat(getComputedStyle(document.documentElement).fontSize) * 3,
+      top: contactTop - parseFloat(getComputedStyle(document.documentElement).fontSize) * 3,
       behavior: 'smooth',
     });
-  }, []);
+  }, [scrollbarRef, contactRef]);
 
   return (
     <Header>

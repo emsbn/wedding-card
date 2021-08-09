@@ -59,8 +59,8 @@ const List = () => {
         }}>
         <Fade in={open}>
           <Box m={1} position="relative">
-            <ModalHeader>
-              <CloseIcon onClick={modalClose} />
+            <ModalHeader onClick={modalClose}>
+              <CloseIcon />
             </ModalHeader>
             <Slider className="slick-main" ref={slickRef}>
               {photoData &&
