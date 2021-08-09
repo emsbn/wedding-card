@@ -22,15 +22,15 @@ export const SubTitle = styled(Typography)`
 `;
 
 export const TextRow = styled(Typography)`
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
 `;
 
 export const Name = styled(Typography)`
   font-size: 1.125rem !important;
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
   font-weight: 600 !important;
 `;
@@ -42,8 +42,8 @@ export const Daughter = styled.span`
 
 export const Place = styled(Typography)`
   font-size: 1rem !important;
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
   //font-weight: 600 !important;
   color: indianred !important;
@@ -53,8 +53,8 @@ export const KaKaoButton = styled(Button)`
   background: #fee500 !important;
   color: #000 !important;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
 `;
 
@@ -62,8 +62,8 @@ export const AccountButton = styled(Button)`
   background: #ec907c !important;
   color: #fff !important;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
 `;
 

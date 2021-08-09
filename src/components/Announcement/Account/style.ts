@@ -35,8 +35,8 @@ export const CopyButton = styled(Button)`
   color: #fff !important;
   height: 1.5rem;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', 'Gamja Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 0.6rem !important;
 `;

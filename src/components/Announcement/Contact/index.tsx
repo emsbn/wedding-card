@@ -13,7 +13,7 @@ import {
   ModalProfileName,
   ModalContactLink,
 } from './style';
-import allProfile, { bongsug, chaeeun, dagyeom, hyeonsu, sihong, subin } from '../../../data/profile';
+import allProfile from '../../../data/profile';
 
 const Contact = ({
   img,
