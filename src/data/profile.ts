@@ -16,9 +16,9 @@ export const hyeonsu: iProfile = {
   img: './images/profile/hyeonsu.png',
   tel: '010-9229-5680',
   tel2: '01092295680',
-  bank: '**은행',
-  account: '000-000-000000',
-  account2: '000000000000',
+  bank: '농협은행',
+  account: '022-01-189425',
+  account2: '02201189425',
   account3: '임덕순',
 };
 export const bongsug: iProfile = {
@@ -45,8 +45,8 @@ export const sihong: iProfile = {
   name: '김시홍',
   position: '아버지',
   img: './images/profile/sihong.png',
-  tel: '010-0000-0000',
-  tel2: '01000000000',
+  tel: '010-5445-4518',
+  tel2: '01054454518',
   bank: '국민은행',
   account: '064-05-0030-973',
   account2: '064050030973',

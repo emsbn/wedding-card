@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, Container as C, Typography } from '@material-ui/core';
+import { Box, Container as C } from '@material-ui/core';
 
 export const Container = styled(C)`
   border-radius: 1rem;

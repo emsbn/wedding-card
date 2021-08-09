@@ -17,7 +17,7 @@ import Calendar from './Calendar';
 import Contact from './Contact';
 import { subin, hyeonsu, bongsug, chaeeun, sihong, dagyeom } from '../../data/profile';
 import Account from './Account';
-const Announcement = ({ announceRef }) => {
+const Announcement = ({ scrollbarRef, announceRef, contactRef }) => {
   const [accountOpen, setAccountOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -36,6 +36,9 @@ const Announcement = ({ announceRef }) => {
 
   const onClickAccountButton = useCallback(() => {
     setAccountOpen(prev => !prev);
+    setTimeout(() => {
+      scrollbarRef.current.view.scroll({ top: scrollbarRef.current.getScrollHeight(), behavior: 'smooth' });
+    }, 150);
   }, []);
 
   return (
@@ -77,7 +80,7 @@ const Announcement = ({ announceRef }) => {
         <TextRow>식장의 사정상 화한은 정중히 사양하겠습니다.</TextRow>
         <TextRow>좋은 마음만 감사히 받겠습니다.</TextRow>
       </Box>
-      <SubTitle>연락처 확인하기</SubTitle>
+      <SubTitle ref={contactRef}>연락처 확인하기</SubTitle>
       <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
         <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">

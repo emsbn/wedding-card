@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import ReactGA from 'react-ga';
+import { Typography } from '@material-ui/core';
 
 import './App.css';
 import HeaderContainer from './layouts/Header';
@@ -12,6 +13,7 @@ function App() {
   const [maxScroll, setMaxScroll] = useState<number>(0);
   const scrollbarRef = useRef<Scrollbars>(null);
   const announceRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<typeof Typography>(null);
 
   useEffect(() => {
     ReactGA.initialize('UA-151723707-1');
@@ -22,7 +24,7 @@ function App() {
     if (scrollbarRef?.current && announceRef?.current)
       setMaxScroll(
         scrollbarRef.current.getScrollHeight() -
-          scrollbarRef?.current.getClientHeight() -
+          scrollbarRef.current.getClientHeight() -
           announceRef.current.offsetHeight,
       );
   }, [scrollbarRef, maxScroll, announceRef]);
@@ -37,8 +39,8 @@ function App() {
   return (
     <Scrollbars ref={scrollbarRef} onScrollFrame={onScroll} style={{ height: '100vh' }}>
       <div className="App">
-        <HeaderContainer />
-        <BodyContainer zValue={zValue} announceRef={announceRef} />
+        <HeaderContainer scrollbarRef={scrollbarRef} announceRef={announceRef} contactRef={contactRef} />
+        <BodyContainer zValue={zValue} scrollbarRef={scrollbarRef} announceRef={announceRef} contactRef={contactRef} />
         <FooterContainer />
       </div>
     </Scrollbars>
