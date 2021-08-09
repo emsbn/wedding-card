@@ -6,6 +6,7 @@ export const ProfileContainer = styled(Box)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const ProfileImg = styled.img`

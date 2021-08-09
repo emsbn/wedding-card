@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Box, ImageList } from '@material-ui/core';
+import { Box, ImageList, ImageListItem as ILI } from '@material-ui/core';
 import { ClearRounded } from '@material-ui/icons';
 
 export const Container = styled(Box)`
@@ -18,6 +18,10 @@ export const ImgList = styled(ImageList)`
   }
 `;
 
+export const ImageListItem = styled(ILI)`
+  cursor: pointer;
+`;
+
 export const More = styled(Box)`
   position: absolute;
   top: 0;
@@ -28,6 +32,7 @@ export const More = styled(Box)`
   align-items: center;
   background: rgba(1, 1, 1, 0.5);
   color: #f4f4f4;
+  pointer-events: none;
 `;
 
 export const Img = styled.img`
@@ -47,4 +52,5 @@ export const ModalHeader = styled(Box)`
 export const CloseIcon = styled(ClearRounded)`
   color: #f4f4f4;
   padding: 0.5rem;
+  cursor: pointer;
 `;

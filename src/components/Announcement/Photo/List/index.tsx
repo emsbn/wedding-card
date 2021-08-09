@@ -1,8 +1,8 @@
 import { useState, useCallback, useRef } from 'react';
-import { ImageListItem, Modal, Backdrop, Fade, Box } from '@material-ui/core';
+import { Modal, Backdrop, Fade, Box } from '@material-ui/core';
 import Slider from 'react-slick';
 
-import { Container, ImgList, More, Img, ModalHeader, CloseIcon } from './styles';
+import { Container, ImgList, ImageListItem, More, Img, ModalHeader, CloseIcon } from './styles';
 import { photoData } from '../../../../data/photo';
 
 const List = () => {
