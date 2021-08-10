@@ -34,10 +34,6 @@ export const photoData: iPhoto[] = [
     title: 'bride and groom 8',
   },
   {
-    path: './images/photo/wedding-bg-9.jpg',
-    title: 'bride and groom 9',
-  },
-  {
     path: './images/photo/wedding-b-1.jpg',
     title: 'bride 1',
   },
@@ -68,18 +64,6 @@ export const photoData: iPhoto[] = [
   {
     path: './images/photo/wedding-b-8.jpg',
     title: 'bride 8',
-  },
-  {
-    path: './images/photo/wedding-b-9.jpg',
-    title: 'bride 9',
-  },
-  {
-    path: './images/photo/wedding-b-10.jpg',
-    title: 'bride 10',
-  },
-  {
-    path: './images/photo/wedding-b-11.jpg',
-    title: 'bride 11',
   },
   {
     path: './images/photo/wedding-g-1.jpg',
