@@ -10,7 +10,7 @@ export const AccountContainer = styled(Box)`
   justify-content: space-between;
   align-items: center;
   border-radius: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 `;
 
 export const AccountTextarea = styled.textarea`
@@ -25,8 +25,8 @@ export const CopyButton = styled(Button)`
   color: #fff !important;
   height: 1.5rem;
   border-radius: 0.25rem !important;
-  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  font-family: 'Cafe24Oneprettynight', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
-  font-size: 0.6rem !important;
+  font-size: 0.75rem !important;
 `;

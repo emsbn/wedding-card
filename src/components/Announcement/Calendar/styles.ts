@@ -18,13 +18,13 @@ export const Header = styled(Box)`
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.125rem;
   width: calc(100% - 2rem);
   margin: 0 1rem;
 `;
 
 export const Month = styled.strong`
-  font-size: 1.375rem;
+  font-size: 1.75rem;
   line-height: 3rem;
 `;
 
@@ -33,14 +33,14 @@ export const Row = styled(Box)`
 `;
 
 export const Day = styled.strong`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 2.75rem;
   width: 14%;
   display: inline-block;
 `;
 
 export const Sat = styled.strong`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 2.75rem;
   width: 14%;
   display: inline-block;
@@ -48,7 +48,7 @@ export const Sat = styled.strong`
 `;
 
 export const Sun = styled.strong`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 2.75rem;
   width: 14%;
   display: inline-block;
@@ -56,7 +56,7 @@ export const Sun = styled.strong`
 `;
 
 export const WeddingDay = styled.strong`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 2.75rem;
   width: 14%;
   display: inline-block;

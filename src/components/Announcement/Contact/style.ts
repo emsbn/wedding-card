@@ -17,7 +17,7 @@ export const ProfileImg = styled.img`
 
 export const ProfileName = styled.p`
   margin-top: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 `;
 
 export const Modal = styled(Md)`

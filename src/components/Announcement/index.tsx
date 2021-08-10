@@ -89,7 +89,7 @@ const Announcement = ({ scrollbarRef, announceRef, contactRef }) => {
       <SubTitle id="contact" ref={contactRef}>
         연락처 확인하기
       </SubTitle>
-      <Box my={2} display="flex" flexDirection="row" justifyContent="center" alignItems="center">
+      <Box my={2} mx={1} display="flex" flexDirection="row" justifyContent="center" alignItems="center">
         <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
           <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
             <Contact img={subin.img} name="신랑 임수빈" click="subin" />

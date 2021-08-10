@@ -13,15 +13,8 @@ code {
 }
 
 @font-face {
-  font-family: 's-core_dream4_regular';
-  src: url('./fonts/scdream4-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 's-core_dream6_bold';
-  src: url('./fonts/scdream6-webfont.woff2') format('woff2');
+  font-family: 'Cafe24Oneprettynight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
