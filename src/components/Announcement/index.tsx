@@ -13,6 +13,7 @@ import {
   AccountAccordionSummary,
   Daughter,
   Place,
+  KakaomapText,
 } from './styles';
 import MapComponent from './Map';
 import List from './Photo/List';
@@ -77,10 +78,19 @@ const Announcement = ({ scrollbarRef, announceRef, contactRef }) => {
       <a className="App-link" href="http://kko.to/96p6rKDfp" target="_blank" rel="noopener noreferrer">
         <MapComponent />
       </a>
+      <KakaomapText>지도를 클릭하시면 카카오맵으로 연결됩니다</KakaomapText>
       <Box mt={2} mb={2}>
         <TextRow>2021년 9월 12일 일요일 낮 12시</TextRow>
         <Place>근화원</Place>
         <TextRow>능동어린이회관 내 공간한옥</TextRow>
+      </Box>
+      <Box mt={2} mb={2}>
+        <TextRow>
+          <strong>주 소</strong> 서울시 광진구 광나루로 441 (능동 18-11)
+        </TextRow>
+        <TextRow>
+          <strong>주 차</strong> 능동어린이회관 정문 주차장 이용
+        </TextRow>
       </Box>
       <Box mt={2} mb={6}>
         <TextRow>식장 사정상 화환은 정중히 사양하겠습니다.</TextRow>

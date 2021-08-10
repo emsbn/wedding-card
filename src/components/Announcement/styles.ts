@@ -41,6 +41,15 @@ export const Daughter = styled.span`
   display: inline-block;
 `;
 
+export const KakaomapText = styled(Typography)`
+  font-size: 0.875rem !important;
+  font-family: 'Cafe24Oneprettynight', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  line-height: 1.5rem !important;
+  color: lightgrey !important;
+  text-decoration: underline;
+`;
+
 export const Place = styled(Typography)`
   font-size: 1.125rem !important;
   font-family: 'Cafe24Oneprettynight', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
