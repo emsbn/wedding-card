@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Box as BoxMaterial, Container } from '@material-ui/core';
+import { Box as BoxMaterial } from '@material-ui/core';
 
 import { Box, Frame3D, Frame, PhotoContainer, Photo, Text, PhotoSub1, PhotoSub2 } from './styles';
 

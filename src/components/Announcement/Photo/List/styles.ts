@@ -33,6 +33,7 @@ export const More = styled(Box)`
   background: rgba(1, 1, 1, 0.5);
   color: #f4f4f4;
   pointer-events: none;
+  font-size: 0.75rem;
 `;
 
 export const Img = styled.img`

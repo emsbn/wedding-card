@@ -14,23 +14,24 @@ export const Eaves = styled.img`
 
 export const SubTitle = styled(Typography)`
   color: #49b293;
-  font-size: 1.5rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 1.375rem !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 700 !important;
   margin-bottom: 1rem !important;
 `;
 
 export const TextRow = styled(Typography)`
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
+  font-size: 0.875rem !important;
 `;
 
 export const Name = styled(Typography)`
-  font-size: 1.125rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 1rem !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
   font-weight: 600 !important;
 `;
@@ -42,10 +43,9 @@ export const Daughter = styled.span`
 
 export const Place = styled(Typography)`
   font-size: 1rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   line-height: 1.75rem !important;
-  //font-weight: 600 !important;
   color: indianred !important;
 `;
 
@@ -53,18 +53,20 @@ export const KaKaoButton = styled(Button)`
   background: #fee500 !important;
   color: #000 !important;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
+  font-size: 0.85rem !important;
 `;
 
 export const AccountButton = styled(Button)`
   background: #ec907c !important;
   color: #fff !important;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
+  font-size: 0.85rem !important;
 `;
 
 export const AccountAccordion = styled(Accordion)`

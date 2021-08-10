@@ -10,17 +10,7 @@ export const AccountContainer = styled(Box)`
   justify-content: space-between;
   align-items: center;
   border-radius: 1rem;
-  font-size: 0.9rem;
-`;
-
-export const ModalContact = styled(Box)`
-  width: 96%;
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 `;
 
 export const AccountTextarea = styled.textarea`
@@ -35,8 +25,8 @@ export const CopyButton = styled(Button)`
   color: #fff !important;
   height: 1.5rem;
   border-radius: 0.25rem !important;
-  font-family: 'Godo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-family: 's-core_dream4_regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 0.6rem !important;
 `;

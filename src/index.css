@@ -13,15 +13,64 @@ code {
 }
 
 @font-face {
-  font-family: 'Godo';
+  font-family: 's-core_dream1_thin';
+  src: url('./fonts/scdream1-webfont.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Godo';
+  font-family: 's-core_dream2_extralight';
+  src: url('./fonts/scdream2-webfont.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
+@font-face {
+  font-family: 's-core_dream3_light';
+  src: url('./fonts/scdream3-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream4_regular';
+  src: url('./fonts/scdream4-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream5_medium';
+  src: url('./fonts/scdream5-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream6_bold';
+  src: url('./fonts/scdream6-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream7_extrabold';
+  src: url('./fonts/scdream7-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream8_heavy';
+  src: url('./fonts/scdream8-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 's-core_dream9_black';
+  src: url('./fonts/scdream9-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
