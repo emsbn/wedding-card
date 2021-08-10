@@ -67,7 +67,7 @@ export const PhotoSub1 = styled.img`
   height: 40%;
   max-width: 60%;
   object-fit: scale-down;
-  transform: translate3d(15vh, 0vh, 0);
+  transform: translate3d(15vh, 1vh, 0);
 `;
 
 export const PhotoSub2 = styled.img`

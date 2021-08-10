@@ -85,7 +85,7 @@ const Story = ({ zValue, announceRef }) => {
           <PhotoContainer>
             <Photo src="./images/story/story-3.jpg" alt="story-3" />
             <BoxMaterial my={1}>
-              <Text align="center">이제 서로를 닮아 가려 합니다.</Text>
+              <Text align="center">이제 서로를 닮아가려 합니다.</Text>
             </BoxMaterial>
           </PhotoContainer>
         </Frame>

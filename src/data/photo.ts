@@ -82,10 +82,6 @@ export const photoData: iPhoto[] = [
     title: 'bride 11',
   },
   {
-    path: './images/photo/wedding-b-12.jpg',
-    title: 'bride 12',
-  },
-  {
     path: './images/photo/wedding-g-1.jpg',
     title: 'groom 1',
   },
