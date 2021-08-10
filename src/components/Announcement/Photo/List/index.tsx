@@ -14,7 +14,7 @@ const List = () => {
     idx => {
       setOpen(true);
       setTimeout(() => {
-        if (slickRef.current) slickRef.current.slickGoTo(idx, true);
+        if (slickRef.current) slickRef.current.slickGoTo(idx ?? 0, true);
       }, 100);
     },
     [slickRef],

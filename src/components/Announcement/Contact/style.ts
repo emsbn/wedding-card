@@ -22,11 +22,13 @@ export const ProfileName = styled.p`
 
 export const Modal = styled(Md)`
   display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
 export const ModalContainer = styled(Box)`
   width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,4 @@
-import { Marker } from '@ref/react-kakao-maps';
-
-import { Map } from './styles';
+import { Map, Marker } from './styles';
 
 const { kakao } = window;
 
