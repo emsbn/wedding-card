@@ -83,7 +83,7 @@ const Announcement = ({ scrollbarRef, announceRef, contactRef }) => {
         <TextRow>능동어린이회관 내 공간한옥</TextRow>
       </Box>
       <Box mt={2} mb={6}>
-        <TextRow>식장 사정상 화한은 정중히 사양하겠습니다.</TextRow>
+        <TextRow>식장 사정상 화환은 정중히 사양하겠습니다.</TextRow>
         <TextRow>좋은 마음만 감사히 받겠습니다.</TextRow>
       </Box>
       <SubTitle id="contact" ref={contactRef}>
