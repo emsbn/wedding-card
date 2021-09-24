@@ -1,14 +1,17 @@
+// eslint-disable-next-line
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import ReactGA from 'react-ga';
 import { Box, Button, TextField, Typography } from '@material-ui/core';
+import dotenv from 'dotenv';
+dotenv.config();
 
 import './App.css';
 import HeaderContainer from './layouts/Header';
 import BodyContainer from './layouts/Body';
 import FooterContainer from './layouts/Footer';
 
-const secret = '1719';
+const secret = process.env.REACT_APP_SECRET;
 
 function App() {
   const [zValue, setZValue] = useState<number>(0);
@@ -39,7 +42,7 @@ function App() {
           scrollbarRef.current.getClientHeight() -
           announceRef.current.offsetHeight,
       );
-  }, [scrollbarRef, maxScroll, announceRef]);
+  }, [show, scrollbarRef, maxScroll, announceRef]);
 
   const onScroll = useCallback(
     values => {

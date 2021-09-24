@@ -125,36 +125,36 @@ const Announcement = ({ scrollbarRef, announceRef, contactRef }) => {
         </KaKaoButton>
       </Box>
 
-      <SubTitle>마음 전하실 곳</SubTitle>
-      <Box mb={2}>
-        <TextRow>코로나로 인해 직접 만나지 못해도</TextRow>
-        <TextRow>축하해 주고싶은 마음을 위해</TextRow>
-        <TextRow>계좌번호를 기재합니다.</TextRow>
-        <TextRow>어려운 시기에 축복해 주셔서</TextRow>
-        <TextRow>감사합니다.</TextRow>
-      </Box>
+      {/*<SubTitle>마음 전하실 곳</SubTitle>*/}
+      {/*<Box mb={2}>*/}
+      {/*  <TextRow>코로나로 인해 직접 만나지 못해도</TextRow>*/}
+      {/*  <TextRow>축하해 주고싶은 마음을 위해</TextRow>*/}
+      {/*  <TextRow>계좌번호를 기재합니다.</TextRow>*/}
+      {/*  <TextRow>어려운 시기에 축복해 주셔서</TextRow>*/}
+      {/*  <TextRow>감사합니다.</TextRow>*/}
+      {/*</Box>*/}
 
-      <Box my={2}>
-        <AccountAccordion expanded={accountOpen}>
-          <AccountAccordionSummary>
-            <AccountButton onClick={onClickAccountButton}>계좌번호 확인하기</AccountButton>
-          </AccountAccordionSummary>
-          <AccordionDetails>
-            <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">
-              <Box my={2}>신랑측</Box>
-              <Account who="subin" />
-              <Account who="hyeonsu" />
-              <Account who="bongsug" />
-              <Box mt={3} mb={2}>
-                신부측
-              </Box>
-              <Account who="chaeeun" />
-              <Account who="sihong" />
-              <Account who="dagyeom" />
-            </Box>
-          </AccordionDetails>
-        </AccountAccordion>
-      </Box>
+      {/*<Box my={2}>*/}
+      {/*  <AccountAccordion expanded={accountOpen}>*/}
+      {/*    <AccountAccordionSummary>*/}
+      {/*      <AccountButton onClick={onClickAccountButton}>계좌번호 확인하기</AccountButton>*/}
+      {/*    </AccountAccordionSummary>*/}
+      {/*    <AccordionDetails>*/}
+      {/*      <Box my={2} display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%">*/}
+      {/*        <Box my={2}>신랑측</Box>*/}
+      {/*        <Account who="subin" />*/}
+      {/*        <Account who="hyeonsu" />*/}
+      {/*        <Account who="bongsug" />*/}
+      {/*        <Box mt={3} mb={2}>*/}
+      {/*          신부측*/}
+      {/*        </Box>*/}
+      {/*        <Account who="chaeeun" />*/}
+      {/*        <Account who="sihong" />*/}
+      {/*        <Account who="dagyeom" />*/}
+      {/*      </Box>*/}
+      {/*    </AccordionDetails>*/}
+      {/*  </AccountAccordion>*/}
+      {/*</Box>*/}
     </AnnouncementMain>
   );
 };
