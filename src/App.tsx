@@ -30,6 +30,12 @@ function App() {
     if (secretInput === secret) setShow(true);
   }, [secretInput]);
 
+  const secretEnter = useCallback(e => {
+    if (e.keyCode == 13) {
+      if (e.target.value === secret) setShow(true);
+    }
+  }, []);
+
   useEffect(() => {
     ReactGA.initialize('UA-151723707-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
@@ -66,7 +72,13 @@ function App() {
         <Typography>비밀번호를 입력하시면 보실 수 있습니다.</Typography>
       </Box>
       <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" my={2}>
-        <TextField label="Secret" variant="outlined" onChange={onChangeSecretInput} style={{ marginRight: '1rem' }} />
+        <TextField
+          label="Secret"
+          variant="outlined"
+          onChange={onChangeSecretInput}
+          style={{ marginRight: '1rem' }}
+          onKeyDown={secretEnter}
+        />
         <Button variant="contained" color="primary" onClick={onSubmitSecret} size={'large'}>
           제출
         </Button>
